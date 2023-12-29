@@ -3,6 +3,7 @@
 ## 개요
 AWS 클라우드 시스템 공동 사용을 위한 IAM 계정 생성 절차
 
+
 ## IAM 이란?
 
 * Identity and Access Management의 약자로, AWS 계정 및 권한 관리 서비스
@@ -45,19 +46,36 @@ AWS 클라우드 시스템 공동 사용을 위한 IAM 계정 생성 절차
 
 1. 기본적으로 생성한 자신의 계정 (=Root 계정)으로 로그인
 2. 우측 상단 계정 이름 > **계정** 클릭
+   
+   <img width="400" alt="스크린샷 2023-12-28 오후 11 04 58" src="https://github.com/NewsboySketch/TIL/assets/42952156/ed2e8a1b-5919-40a3-98ab-3bbf653c1d6d">
+
+
 3. 결제 정보에 대한 IAM 사용자 및 역할 액세스 활성화 > 업데이트
+   <img width="1356" alt="스크린샷 2023-12-28 오후 11 05 46" src="https://github.com/NewsboySketch/TIL/assets/42952156/78d33f6e-7b67-45d8-bd5d-e382f9485671">
+
 
 ### 2. 관리용 IAM 사용자 생성
 
 1. IAM 검색 및 이동 > 사용자(Users) 클릭
 2. 사용자명 지정 (administrator, admin 등)
 3. AWS 콘솔 엑세스 권한 제공 체크, IAM 사용자 직접 생성 체크
-
+   
     * ID 센터 : 계정 관리 서비스
+   <img width="1728" alt="스크린샷 2023-12-28 오후 11 08 31" src="https://github.com/NewsboySketch/TIL/assets/42952156/2e1d5bb3-89f6-4bb6-a3ae-d885b07f7af1">
 4. 그룹에 사용자 추가 > 그룹 생성 (Admin 등), AdministratorAccess 정책 체크 > 사용자 그룹 생성 > 해당 그룹 체크 후 사용자 생성
+   <img width="1723" alt="스크린샷 2023-12-28 오후 11 09 07" src="https://github.com/NewsboySketch/TIL/assets/42952156/3c27ad6b-2004-4bb1-a2c6-3f044ce30315">
+   <img width="1398" alt="스크린샷 2023-12-28 오후 11 10 20" src="https://github.com/NewsboySketch/TIL/assets/42952156/3aabc4c7-7e88-4447-b5ce-842a93dab487">
+
+
 5. 콘솔 로그인 링크를 접속해 로그인
+   <img width="981" alt="image" src="https://github.com/NewsboySketch/TIL/assets/42952156/ff181808-e3e4-4135-84ed-e4902dff87b7">
+
 
 ### 3. 개발용 IAM 사용자 생성
 
 1. 위 2와 같은 절차이나, PowerUserAccess 정책으로 새 그룹을 생성하여 사용자에 적용
+   <img width="828" alt="스크린샷 2023-12-28 오후 11 22 15" src="https://github.com/NewsboySketch/TIL/assets/42952156/922a75bc-2b90-4755-b413-c71f45860a6e">
+
+   <img width="1339" alt="스크린샷 2023-12-28 오후 11 23 25" src="https://github.com/NewsboySketch/TIL/assets/42952156/7a15a47c-1796-4f32-b8a7-4657d57c4224">
+
 
