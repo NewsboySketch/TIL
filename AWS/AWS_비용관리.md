@@ -26,7 +26,7 @@
 
 ### AWS Budgets 실습
 
-#### 프리 티어 정책 위반 시 리소스 해제 Budget 생성 실습
+#### 프리 티어 정책 위반 시 알림 Budget 생성 실습
 
 1. AWS Budgets 이동 및 예산 생성 클릭
   <img width="1000" alt="스크린샷 2024-01-03 오후 9 45 44" src="https://github.com/NewsboySketch/TIL/assets/42952156/19713b68-a057-4c2f-af58-c695cfa43dfc">
